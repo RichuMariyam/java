@@ -5,11 +5,11 @@ public class Authentication
     {
         String username="Ashish";
         String password="@Ashish123";
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the Username:");
-        String u1=sc.nextLine();
-        System.out.println("Enter the password:");
-        String u2=sc.nextLine();
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter the username");
+        String u1=s.nextLine();
+        System.out.println("Enter the password");
+        String u2=s.nextLine();
         try
         {
             if((u1.equals(username))&&(u2.equals(password)))
@@ -18,7 +18,7 @@ public class Authentication
             }
             else
             {
-                throw new CredentialException("Invalid Credential");
+                throw new CredentialException("Invalid Credentials");
             }
         }
         catch(CredentialException e)

@@ -49,14 +49,14 @@ public class Shop
         n=s.nextInt();
         Bill ob[]=new Bill[n];
         for(i=0;i<n;i++)
-        {
         ob[i]=new Bill();
-        }
-        for(i=0;i<n;i++)
+         for(i=0;i<n;i++)
         {
             ob[i].getdata();
-            ob[i].getdata();
+            ob[i].calculate();
         }
+        
+       
         System.out.println("Order No:"+order_no);
         System.out.println("Date:"+date);
         System.out.println("PRoductid NAme Quantity Unitprice Total");

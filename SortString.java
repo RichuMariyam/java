@@ -2,9 +2,11 @@ import java.util.Arrays;
 import java.util.Scanner;
 public class SortString
 {
+ 
     public static void main(String args[])
     {
         Scanner s=new Scanner(System.in);
+       
         System.out.println("Enter the number of strings;");
         int n=s.nextInt();
         s.nextLine();

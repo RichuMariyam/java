@@ -27,7 +27,7 @@ public class SearchNum
     }
     if(flag!=0)
     {
-        System.out.println(e+"is found at position-"+pos);
+        System.out.println(e+ "is found at position-"+pos);
     }
     else
     {

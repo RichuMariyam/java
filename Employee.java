@@ -1,36 +1,28 @@
-import java.util.Scanner;
-public class Employee 
+class Emp
 {
-    int empid,TA,DA,HRA,Tax,basic,netsal;
+    int empno;
     String empname;
-    void getdata()
+    Emp(int no,String name)
     {
-        Scanner scan=new Scanner(System.in);
-        System.out.println("Enter Employee name,id,Basic Pay,TA,DA,HRA and Tax");;
-        empname=scan.nextLine();
-        empid=scan.nextInt();
-        basic=scan.nextInt();
-        TA=scan.nextInt();
-        DA=scan.nextInt();
-        HRA=scan.nextInt();
-        Tax=scan.nextInt();
-
+        empno=no;
+        empname=name;
     }
-    void calc()
+    void display()
     {
-        netsal=(basic+TA+DA+HRA)-Tax;
-        System.out.println("Net Salary:"+netsal);
-
+        System.out.println("Employee Details:");
+        System.out.println("-----------------------");
+        System.out.println("Employee Name:"+empname);
+        System.out.println("Emplyee No:"+empno);
     }
-    public static void main(String args[])
-    {
-        Employee e1=new Employee();
-        e1.getdata();
-        System.out.println("\nEmployee Details");
-        System.out.println("----------------");
-        System.out.println("Employee ID:"+e1.empid);
-        System.out.println("Employee Name:"+e1.empname);
-        e1.calc();
-    }
-
+}
+public class Employee
+{
+    
+        public static void main(String args[])
+        {
+            Emp e=new Emp(123,"Riya");
+            e.display();
+        }
+    
+    
 }
